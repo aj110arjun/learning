@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,5 +8,24 @@
 </head>
 <body>
     <h1>My name is Arjun AJ...</h1>
+    <form action="" method="post">
+        <div>
+            <label for="cod">Cash On Delivery</label>
+            <input id="cod" type="radio" name="payment_method" value="cod">
+        </div>
+        <div>
+            <label for="razorpay">RazorPay</label>
+            <input id="razorpay" type="radio" name="payment_method" value="razorpay">
+        </div>
+        <div>
+            <label for="wallet">Wallet</label>
+            <input id="wallet" type="radio" name="payment_method" value="wallet">
+        </div>
+
+        <button id="actionbtn" type="submit" >Place Order</button>
+
+    </form>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
