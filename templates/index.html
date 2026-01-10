@@ -22,17 +22,19 @@
             <label for="wallet">Wallet</label>
             <input id="wallet" type="radio" name="payment_method" value="wallet">
         </div>
-
-        <input type="radio" name="variant" value="Small" data-price="599" />
-        <input type="radio" name="variant" value="Large" data-price="899" />
+        <div>
+            <label for="small-variant">Small</label>
+            <input id="small-variant" type="radio" name="variant" value="Small" data-price="599" />
+        </div>
+        <div>
+            <label for="large-variant">Large</label>
+            <input id="large-variant" type="radio" name="variant" value="Large" data-price="899" />
+        </div>
 
         <p>Price: Rs. <span id="price">599</span></p>
 
         <button id="actionbtn" type="submit" >Place Order</button>
 
-    </form>
-    <form action="" method="post">
-        
     </form>
 
     <script src="{% static 'js/script.js' %}"></script>

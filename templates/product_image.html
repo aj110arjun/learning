@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+    <link rel="stylesheet" href="{% static 'css/product_image.css' %}">
+</head>
+<body>
+
+<h2>{{ product.name }}</h2>
+
+<div class="gallery">
+    <!-- Main Image -->
+    <div class="main-image">
+        {% if primary_image %}
+            {% for pimg in primary_image%}
+            <img
+                id="mainProductImage"
+                src="{{ pimg.image.url }}"
+                alt="Product Image"
+            >
+            {% endfor %}
+        {% else %}
+            <p>No primary image</p>
+        {% endif %}
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="thumbnails">
+        {% for img in images %}
+            <img
+                src="{{ img.image.url }}"
+                class="thumbnail"
+                data-large="{{ img.image.url }}"
+            >
+        {% endfor %}
+    </div>
+</div>
+
+<script src="{% static 'js/product_image.js' %}"></script>
+
+</body>
+</html>
