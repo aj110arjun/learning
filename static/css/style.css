@@ -1,0 +1,12 @@
+.counter-container {
+  max-width: 400px; margin: 50px auto; padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px; color: white; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#count { font-size: 4em; margin: 20px 0; font-weight: bold; }
+.btn { padding: 15px 30px; margin: 10px; border: none; border-radius: 50px; font-size: 1.2em; cursor: pointer; transition: transform 0.2s; }
+.btn:hover { transform: scale(1.05); }
+.inc { background: #4CAF50; color: white; }
+.dec { background: #f44336; color: white; }
+.reset { background: #ff9800; color: white; }

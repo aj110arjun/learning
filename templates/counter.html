@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter with DOMContentLoaded</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="counter-container">
+    <h1>Counter DOM Ready</h1>
+    <div id="count">0</div>
+    <button class="btn inc" id="increment">+</button>
+    <button class="btn dec" id="decrement">-</button>
+    <br>
+    <button class="btn reset" id="reset">Reset</button>
+  </div>
+
+  <script src="{% static 'js/counter.js' %}"></script>
+</body>
+</html>
