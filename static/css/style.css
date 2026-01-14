@@ -10,3 +10,20 @@
 .inc { background: #4CAF50; color: white; }
 .dec { background: #f44336; color: white; }
 .reset { background: #ff9800; color: white; }
+
+
+.todo-app { max-width: 500px; margin: 50px auto; padding: 20px; 
+              background: #f4f4f4; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+  #todoInput { width: 70%; padding: 12px; border: 2px solid #ddd; border-radius: 25px; font-size: 16px; }
+  #addBtn { padding: 12px 25px; background: #4CAF50; color: white; border: none; 
+            border-radius: 25px; cursor: pointer; margin-left: 10px; }
+  #addBtn:hover { background: #45a049; }
+  .todo-list { list-style: none; padding: 0; margin: 20px 0; }
+  .todo-item { display: flex; align-items: center; padding: 15px; 
+               background: white; margin: 10px 0; border-radius: 10px; 
+               transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  .todo-item:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+  .todo-item.completed { opacity: 0.6; text-decoration: line-through; background: #e8f5e8; }
+  .todo-text { flex-grow: 1; padding: 0 15px; }
+  .delete-btn { background: #f44336; color: white; border: none; 
+                padding: 8px 12px; border-radius: 50%; cursor: pointer; margin-left: 10px; }

@@ -3,8 +3,6 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'index.html')
-<<<<<<< Updated upstream
-=======
 
 def product_view(request, product_id):
     product = get_object_or_404(Product, id=product_id)
@@ -22,4 +20,4 @@ def product_view(request, product_id):
 
 def counter(request):
     return render(request, 'counter.html')
->>>>>>> Stashed changes
+
